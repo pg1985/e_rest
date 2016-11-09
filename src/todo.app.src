@@ -1,0 +1,14 @@
+%%file: src/todo.app.src
+
+{application, todo
+[
+	{description, "a simple app"},
+	{vsn, "1"},
+	{registered []},
+	{applications, [
+		kernel,
+		stdlib
+		]},
+	{mod, {todo_app, []}},
+	{env, []}
+]}.
