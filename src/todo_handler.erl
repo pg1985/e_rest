@@ -1,5 +1,6 @@
 -module(todo_handler).
--compile([parse_transform, leptus_pt]).
+%%-compile([parse_transform, leptus_pt]).
+-compile({parse_transform, leptus_pt}).
 
 %% leptus callbacks
 -export([init/3]).
