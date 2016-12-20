@@ -16,6 +16,10 @@ start(_StartType, _StartArgs) ->
     Opts = [{static_dir, { '_', { priv_dir, ?MODULE, "templates"}}}],
     leptus:start_listener(http, [{'_', [{todo_handler, undef}]}], Opts).
 
+start(_StartType, _StartArgs, Other) ->
+	Opts = [{static_dir, { '_', { priv_dir, ?MODULE, "templates"}}}],
+    leptus:start_listener(http, [{'_', [{todo_handler, undef}]}], Opts).
+
 
 stop(_State) ->
     ok.
